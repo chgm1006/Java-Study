@@ -1,6 +1,5 @@
-package javastudytest.junitstudy.testing;
+package junitstudy.testing;
 
-import junitstudy.testing.CalculateSample;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

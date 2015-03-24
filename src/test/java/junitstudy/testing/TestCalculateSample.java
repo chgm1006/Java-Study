@@ -1,7 +1,6 @@
-package javastudytest.junitstudy.testing;
+package junitstudy.testing;
 
 import junit.framework.TestCase;
-import junitstudy.testing.CalculateSample;
 
 public class TestCalculateSample extends TestCase {
 

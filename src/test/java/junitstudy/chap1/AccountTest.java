@@ -1,6 +1,5 @@
-package javastudytest.junitstudy.chap1;
+package junitstudy.chap1;
 
-import junitstudy.chap1.Account;
 import org.junit.Before;
 import org.junit.Test;
 

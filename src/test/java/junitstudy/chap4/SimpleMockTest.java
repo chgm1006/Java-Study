@@ -1,12 +1,10 @@
-package javastudytest.junitstudy.chap4;
+package junitstudy.chap4;
 
 import org.junit.Test;
 
 import java.util.List;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by Forrest G. Choi on 2014-09-24.
