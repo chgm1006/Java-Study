@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DefaultController implements Controller {
-  private Map requestHandlers = new HashMap<>();
+  private Map requestHandlers = new HashMap();
 
-  protected RequestHandler getHandler(Request request) {
+  public RequestHandler getHandler(Request request) {
     if (!this.requestHandlers.containsKey(request.getName())) {
       String message = "Cannot find handler for request name " + "[" + request.getName() + "]";
       throw new RuntimeException(message);

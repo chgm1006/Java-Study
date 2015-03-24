@@ -1,4 +1,4 @@
-package junitstudy.chap7;
+package javastudytest.junitstudy.chap7;
 
 /**
  * Created by Forrest G. Choi on 2014-10-21.

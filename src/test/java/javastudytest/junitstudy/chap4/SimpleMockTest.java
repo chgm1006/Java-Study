@@ -1,4 +1,4 @@
-package junitstudy.chap4;
+package javastudytest.junitstudy.chap4;
 
 import org.junit.Test;
 
