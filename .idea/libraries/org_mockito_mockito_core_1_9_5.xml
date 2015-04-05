@@ -2,9 +2,9 @@
   <library name="org.mockito:mockito-core:1.9.5" type="repository">
     <properties maven-id="org.mockito:mockito-core:1.9.5" />
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/mockito-core-1.9.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/objenesis-1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/1.0/objenesis-1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

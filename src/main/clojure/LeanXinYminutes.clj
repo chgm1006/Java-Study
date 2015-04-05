@@ -59,3 +59,14 @@
 (concat [1 2] '(3 4))
 
 (map inc [1 2 3])
+
+
+((fn[] "Hello, World"))
+
+(defn helloName[name]
+ ("Hello, " name))
+
+(helloName "forrest")
+
+
+
