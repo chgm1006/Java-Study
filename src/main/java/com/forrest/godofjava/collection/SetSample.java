@@ -18,6 +18,18 @@ public class SetSample {
   }
 
   private int getCarKinds(String[] cars) {
+    Integer x = getInteger(cars);
+    if (x != null) return x;
+
+    HashSet<String> carSet = getStrings(cars);
+
+    printCarSet(carSet);
+    printCarSet2(carSet);
+
+    return carSet.size();
+  }
+
+  private Integer getInteger(String[] cars) {
     if (cars == null) {
       return 0;
     }
@@ -25,16 +37,15 @@ public class SetSample {
     if (cars.length == 1) {
       return 1;
     }
+    return null;
+  }
 
+  private HashSet<String> getStrings(String[] cars) {
     HashSet<String> carSet = new HashSet<String>();
     for (String car : cars) {
       carSet.add(car);
     }
-
-    printCarSet(carSet);
-    printCarSet2(carSet);
-
-    return carSet.size();
+    return carSet;
   }
 
   private void printCarSet2(HashSet<String> carSet) {
