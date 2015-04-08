@@ -1,5 +1,8 @@
 package com.forrest.godofjava.collection;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.*;
 
 /**
@@ -8,9 +11,46 @@ import java.util.*;
 public class MapSample {
   public static void main(String[] args) {
     MapSample sample = new MapSample();
-    sample.checkHashMap();
-    sample.checkHashMapEntry();
-    sample.checkTreeMap();
+//    sample.checkHashMap();
+//    sample.checkHashMapEntry();
+//    sample.checkTreeMap();
+//    sample.checkProperties();
+    sample.saveAndLoadProperties();
+
+  }
+
+  private void saveAndLoadProperties() {
+    try {
+//      String fileName = "test.properties";
+      String fileName = "test.xml";
+      File propertiesFile = new File(fileName);
+      FileOutputStream fileOutputStream = new FileOutputStream(propertiesFile);
+      Properties properties = new Properties();
+      properties.setProperty("Writer", "Forrest, Choi");
+      properties.setProperty("WriterHome", "Http://www.guru-forrest.com");
+//      properties.store(fileOutputStream, "Basic Properties file.");
+      properties.store(fileOutputStream, "Basic XML file.");
+      fileOutputStream.close();
+
+      FileInputStream fileInputStream = new FileInputStream(propertiesFile);
+      Properties propertiesLoaded = new Properties();
+//      propertiesLoaded.load(fileInputStream);
+      propertiesLoaded.loadFromXML(fileInputStream);
+      fileInputStream.close();
+      System.out.println(propertiesLoaded);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+  }
+
+  private void checkProperties() {
+    System.out.println();
+    Properties properties = System.getProperties();
+    Set<Object> keySet = properties.keySet();
+    for (Object tempObject : keySet) {
+      System.out.println(tempObject + " = " + properties.get(tempObject));
+    }
   }
 
   private void checkTreeMap() {
@@ -99,4 +139,6 @@ public class MapSample {
     }
 
   }
+
+
 }
