@@ -5,9 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.*;
 
-/**
- * Created by chgm1006 on 2015. 4. 7..
- */
 public class MapSample {
   public static void main(String[] args) {
     MapSample sample = new MapSample();
@@ -29,7 +26,7 @@ public class MapSample {
       properties.setProperty("Writer", "Forrest, Choi");
       properties.setProperty("WriterHome", "Http://www.guru-forrest.com");
 //      properties.store(fileOutputStream, "Basic Properties file.");
-      properties.store(fileOutputStream, "Basic XML file.");
+      properties.storeToXML(fileOutputStream, "Basic XML file.");
       fileOutputStream.close();
 
       FileInputStream fileInputStream = new FileInputStream(propertiesFile);
@@ -133,10 +130,10 @@ public class MapSample {
     }
 
     System.out.println();
-    Iterator<String> iterator = values.iterator();
-    while (iterator.hasNext()) {
-      System.out.println(iterator.next());
-    }
+//    Iterator<String> iterator = values.iterator();
+//    while (iterator.hasNext()) {
+//      System.out.println(iterator.next());
+//    }
 
   }
 
