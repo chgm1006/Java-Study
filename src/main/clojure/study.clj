@@ -301,7 +301,7 @@ aaa
 (doc index-filter)
 
 
-;; with-meta 예제
+; with-meta 예제
 (def stu {:name "Stu" :email "stu@thinkrelevance.com"})
 (def serializable-stu (with-meta stu {:serializable true}))
 
