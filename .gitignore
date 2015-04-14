@@ -123,6 +123,6 @@ project/plugins/project/
 
 
 # IDE ignore files
-.idea/
+.idea/*
 JavaStudy.iml
-target/
+target/*
