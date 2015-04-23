@@ -6,7 +6,8 @@ package com.forrest.godofjava.thread;
 public class RunThreads {
   public static void main(String[] args) {
     RunThreads thread = new RunThreads();
-    thread.checkThreadState1();
+//    thread.infinite();
+    thread.runVolatileSample();
 
   }
 
@@ -37,4 +38,34 @@ public class RunThreads {
     }
   }
 
+  public void infinite() {
+    InfiniteThread thread = new InfiniteThread();
+    thread.start();
+    try {
+      Thread.sleep(500);
+      thread.interrupt();
+      System.out.println("interrupt() called ");
+      thread.join(500);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+
+    System.out.println("isAlive = " + thread.isAlive());
+    System.out.println("isInterrupted = " + thread.isInterrupted());
+  }
+
+  public void runVolatileSample() {
+    VolatileSample sample = new VolatileSample();
+    sample.start();
+
+    try {
+      Thread.sleep(1000);
+
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+    System.out.println("Sleep ended!!");
+    sample.setDouble(-1);
+    System.out.println("Set Value is complete !!!");
+  }
 }
