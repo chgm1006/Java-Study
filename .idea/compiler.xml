@@ -30,9 +30,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaStudy" target="1.8" />
-      <module name="metaexam" target="1.7" />
-      <module name="metaexam-2" target="1.7" />
-      <module name="metaworks3" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
