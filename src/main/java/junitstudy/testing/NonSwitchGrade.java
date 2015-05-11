@@ -2,12 +2,9 @@ package junitstudy.testing;
 
 import java.util.Scanner;
 
-/**
- * Created by Forrest G. Choi on 2015-05-11.
- */
 public class NonSwitchGrade {
-    public static void main(String[] args) throws Exception{
-        NonSwitchGrade nonSwitchGrade= new NonSwitchGrade();
+    public static void main(String[] args) throws Exception {
+        NonSwitchGrade nonSwitchGrade = new NonSwitchGrade();
         System.out.print("점수는? ");
         int num = new Scanner(System.in).nextInt();
         nonSwitchGrade.printGrade(num);
