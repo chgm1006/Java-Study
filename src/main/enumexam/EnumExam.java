@@ -1,4 +1,6 @@
-package com.enumexam;
+package enumexam;
+
+import com.enumexam.Week;
 
 /**
  * Created by Forrest on 2016. 8. 31..

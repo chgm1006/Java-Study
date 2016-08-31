@@ -1,4 +1,5 @@
-package com.enumexam;
+package enumexam;
+
 /**
  * Created by Forrest on 2016. 8. 31..
  */
