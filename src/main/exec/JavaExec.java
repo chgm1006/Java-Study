@@ -2,9 +2,6 @@ package exec;
 
 import java.io.*;
 
-/**
- * Created by Forrest on 2016. 9. 29..
- */
 public class JavaExec {
     public static void main(String[] args) throws IOException {
         Runtime runtime = Runtime.getRuntime();
