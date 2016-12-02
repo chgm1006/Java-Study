@@ -22,8 +22,5 @@ public class MyAnnoTest {
         }
     }
 
-    public static void main(String[] args) {
-        MyAnnoTest myAnnoTest = new MyAnnoTest();
-        myAnnoTest.printDefaultAnnotation(myAnnoTest);
-    }
+
 }
