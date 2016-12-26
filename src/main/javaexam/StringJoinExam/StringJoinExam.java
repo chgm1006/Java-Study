@@ -12,7 +12,7 @@ public class StringJoinExam {
 
         System.out.println("str1 :: " + str1);
 
-        List<String> list = Arrays.asList("Java", "8", "is", "Greate!");
+        List<String> list = Arrays.asList("Java", "8", "is", "Great!");
         String str2 = String.join(" ", list);
         System.out.println("str2 :: " + str2);
 
