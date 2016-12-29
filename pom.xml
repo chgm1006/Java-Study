@@ -43,15 +43,18 @@
     </build>
 
     <properties>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
+        <junit.platform.version>1.0.0-M3</junit.platform.version>
+        <junit.jupiter.version>5.0.0-M3</junit.jupiter.version>
+        <junit.vintage.version>4.12.0-M3</junit.vintage.version>
     </properties>
     <dependencies>
         <!-- Junit 4 -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>junit</groupId>-->
+        <!--<artifactId>junit</artifactId>-->
+        <!--<version>${junit.version}</version>-->
+        <!--</dependency>-->
 
         <!-- hamcrest-all 1.9.5 -->
         <!--<dependency>-->
@@ -61,10 +64,67 @@
         <!--</dependency>-->
 
         <!--mockito-all -->
+        <!--<dependency>-->
+        <!--<groupId>org.mockito</groupId>-->
+        <!--<artifactId>mockito-all</artifactId>-->
+        <!--<version>1.9.5</version>-->
+        <!--</dependency>-->
+
+        <!-- Junit platform -->
         <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>1.9.5</version>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-console</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-gradle-plugin</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
+
+        <!-- Junit Jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-migration-support</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+
+        <!-- Junit Vintage -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>${junit.vintage.version}</version>
         </dependency>
 
     </dependencies>
