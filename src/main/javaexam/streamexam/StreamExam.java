@@ -23,5 +23,16 @@ public class StreamExam {
         Map<String, String> map = new HashMap<>();
         Stream<Map.Entry<String, String>> s3 = map.entrySet().stream();
 
+        System.out.println();
+        List<String> list2 = Arrays.asList("Java", "Scala", "JavaScript", "Groovy");
+        list2.stream().filter(s -> s.startsWith("J"))
+                .forEach(System.out::println);
+
+        System.out.println();
+        List<String> list3 = Arrays.asList("Java,Groovy", "C#,VB.NET");
+        list3.stream()
+                .flatMap(s -> Stream.of(s.split(",")))
+                .forEach(System.out::println);
+
     }
 }

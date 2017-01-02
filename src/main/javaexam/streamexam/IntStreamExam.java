@@ -1,5 +1,7 @@
 package javaexam.streamexam;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -27,12 +29,15 @@ public class IntStreamExam {
 
         Stream<String> stream = Stream.of("Java", "Scala", "JavaScript", "Groovy");
         IntStream intStream = stream.mapToInt(s -> s.length());
-//        System.out.println(intStream.count());
-        intStream.forEach(System.out::println);
+        intStream.forEach(s -> System.out.println(s));
+//        intStream.forEach(System.out::println);
 
-        IntStream iterate = IntStream.iterate(0, i -> i + 1);
-        long count = iterate.count();
-        System.out.println(count);
+        // 무한루프에 빠지는 코드. 주의할 것.
+//        IntStream iterate = IntStream.iterate(0, i -> i + 1);
+//        iterate.forEach(System.out::println);
+//        long count = iterate.count();
+//        System.out.println(count);
+
 
     }
 }
