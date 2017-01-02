@@ -1,7 +1,6 @@
 package javaexam.streamexam;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.Optional;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -38,6 +37,13 @@ public class IntStreamExam {
 //        long count = iterate.count();
 //        System.out.println(count);
 
+        System.out.println();
+        IntStream intStream5 = IntStream.of(1, 2, 3, 4, 5);
+        int sum = intStream5.sum();
+        System.out.println("sum :: " + sum);
 
+        Stream<Integer> stream1 = Stream.of(1, 2, 3, 4, 5);
+        Optional<Integer> result = stream1.reduce((a, b) -> a * b);
+        System.out.println("result :: " + result.orElse(-1));
     }
 }
