@@ -3,24 +3,38 @@ package algorithms.hashtableExam;
 /**
  * Created by Forrest on 2016. 12. 29..
  */
-public interface HashSearch {
-    HashTable createHashTable(int bucketSize);
+public abstract class HashSearch {
+    class HashBucket {
+        char[] key = new char[HASH_KEY + 1];
+        int value;
+        HashBucketStatus status;
+    }
 
-    int addData(HashTable hashTable, HashBucket bucket);
+    class HashTable {
+        int bucketSize;
+        int currentCount;
+        HashBucket pBucket;
+    }
 
-    HashBucket search(HashTable hashTable, char key);
+    private static final int HASH_KEY = 30;
 
-    void displayHashTable(HashTable hashTable);
+    public abstract HashTable createHashTable(int bucketSize);
 
-    int getCount(HashTable hashTable);
+    public abstract int addData(HashTable hashTable, HashBucket bucket);
 
-    void deleteHashTable(HashTable hashTable);
+    public abstract HashBucket search(HashTable hashTable, char key);
 
-    int hashFunction(char key, int bucketSize);
+    public abstract void displayHashTable(HashTable hashTable);
 
-    long stringToLong(char key);
+    public abstract int getCount(HashTable hashTable);
 
-    int isEmptyBucket(HashBucket bucket);
+    public abstract void deleteHashTable(HashTable hashTable);
 
-    int isEmptyOrDeletedBucket(HashBucket bucket);
+    public abstract int hashFunction(char key, int bucketSize);
+
+    public abstract long stringToLong(char key);
+
+    public abstract int isEmptyBucket(HashBucket bucket);
+
+    public abstract int isEmptyOrDeletedBucket(HashBucket bucket);
 }
