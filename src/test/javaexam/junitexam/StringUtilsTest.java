@@ -10,17 +10,17 @@ import static org.junit.Assert.assertThat;
  */
 public class StringUtilsTest {
     @Test
-    public void isEmpty() throws Exception {
+    public void testIsEmpty() throws Exception {
         assertThat(StringUtils.isEmpty(null), is(true));
     }
 
     @Test
-    public void isEmpty2() {
+    public void testIsEmpty2() {
         assertThat(StringUtils.isEmpty(""), is(true));
     }
 
     @Test
-    public void isEmpty3() {
+    public void testIsEmpty3() {
         assertThat(StringUtils.isEmpty("test"), is(false));
     }
 

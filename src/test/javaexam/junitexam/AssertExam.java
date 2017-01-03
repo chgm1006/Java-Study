@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  */
 public class AssertExam {
     @Test
-    public void assertEqualsExam() {
+    public void testAssertEquals() {
         int x = 3;
         assertEquals(3, x);
         x = 4;
@@ -19,28 +19,28 @@ public class AssertExam {
     }
 
     @Test
-    public void assertArrayEqualsExam() {
+    public void testAssertArrayEquals() {
         int[] expected = {1, 2, 3};
         int[] x = {3, 3, 3};
         assertArrayEquals("x가 배열 {1, 2, 3}이 아님", expected, x);
     }
 
     @Test
-    public void assertThatExam() {
+    public void testAssertThat() {
         int x = 3;
         assertThat(x, is(3));
 
     }
 
     @Test
-    public void assertTrueExam() {
+    public void testAssertTrue() {
         boolean expected = true;
         assertTrue(expected);
         assertTrue("expected가 true가 아님", !expected);
     }
 
     @Test
-    public void assertFalseExam() {
+    public void testAssertFalse() {
         boolean expected = false;
         assertFalse(expected);
         assertFalse("expected가 false가 아님", !expected);
