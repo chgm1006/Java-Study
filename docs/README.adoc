@@ -32,3 +32,7 @@ IMPORTANT: Asciidoctor is awesome, don't forget!
 CAUTION: Don't forget to add the `...-caption` document attributes in the header of the document on GitHub.
 
 WARNING: You have no reason not to use Asciidoctor.
+
+[[img-sunset]]
+.A mountain sunset
+image::sunset.jpg[Sunset, 300, 200, link="http://www.flickr.com/photos/javh/5448336655"]
