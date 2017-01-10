@@ -11,9 +11,9 @@ public class CalculatorTest {
     @Test
     public void testAdd() throws Exception {
         Calculator calculator = new Calculator();
-        double result = calculator.add(10, 50);
+        double result = calculator.add(1, 1);
 
-        assertEquals(60, result, 0);
+        assertEquals(2, result, 0);
 
     }
 
