@@ -1,6 +1,4 @@
-= Java Study
-
-개인적으로 Java를 공부한 예제 소스를 올려두는 프로젝트 입니다. 이 ASCIIDOC 문서는 공부 차원에서 작성하는 문서 입니다.
+GitHub에서 AsciiDoc의 아이콘을 사용할 수 있는 방법 : https://gist.github.com/mrhaki/3c7e52fe809fe805a8540b25b99e106b[mrhaki]의 GitHub 참조
 
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -9,6 +7,13 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
+
+:icons: font
+++++
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+++++
+
+:iconfont-cdn: http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css
 
 = Asciidoc on GitHub
 
