@@ -43,6 +43,11 @@ This is documentation for project X.
 
 include::basics.adoc[]
 
+[source,java]
+----
+include::Java-Study/src/java/algorithms/swapExam/Swap.java
+----
+
 . one
 . two
 . three
