@@ -42,7 +42,7 @@ Lead Developer
 This is documentation for project X.
 
 include::basics.adoc[]
-<<<
+
 . one
 . two
 . three
