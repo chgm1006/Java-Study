@@ -1,0 +1,9 @@
+= Junit
+
+- Junit5로 테스트 하였다
+
+
+[source,java]
+----
+include::../src/test/javaexam/junitexam/SetupExam.java[]
+----
