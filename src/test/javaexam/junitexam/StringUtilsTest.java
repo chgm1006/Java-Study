@@ -1,9 +1,10 @@
 package javaexam.junitexam;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 /**
  * Created by Forrest on 2017. 1. 3..
@@ -11,17 +12,17 @@ import static org.junit.Assert.assertThat;
 public class StringUtilsTest {
     @Test
     public void testIsEmpty() throws Exception {
-        assertThat(StringUtils.isEmpty(null), is(true));
+        assertSame(StringUtils.isEmpty(null), is(true));
     }
 
     @Test
     public void testIsEmpty2() {
-        assertThat(StringUtils.isEmpty(""), is(true));
+        assertSame(StringUtils.isEmpty(""), is(true));
     }
 
     @Test
     public void testIsEmpty3() {
-        assertThat(StringUtils.isEmpty("test"), is(false));
+        assertSame(StringUtils.isEmpty("test"), is(false));
     }
 
 }

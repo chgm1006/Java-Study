@@ -7,7 +7,11 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 /**
  * Created by Forrest on 2017. 1. 11..
@@ -17,19 +21,19 @@ public class MatchersExam {
     @Test
     public void testMatchers() {
         int x = 3;
-        assertThat(x, is(3));
+        assertSame(x, is(3));
 
-        assertThat(x, is(not(0)));
+        assumingThat(x != 0, () -> System.out.println("True"));
     }
 
     @Test
     public void testNull() {
 
         String x = null;
-        assertThat(x, is(nullValue()));
+        assertSame(x, is(nullValue()));
 
         x = "";
-        assertThat(x, is(notNullValue()));
+        assertSame(x, is(notNullValue()));
     }
 
     @Test
@@ -70,8 +74,10 @@ public class MatchersExam {
         assertThat(list, hasItems("a", "e", "t"));
     }
 
-    @org.junit.Test(expected = IllegalArgumentException.class)
+    @Test
     public void testException() {
-        Calculator.divide(2, 0);
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> Calculator.divide(2, 0));
+        assertEquals("a message", exception.getMessage());
     }
+
 }

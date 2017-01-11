@@ -7,3 +7,18 @@
 ----
 include::../src/test/javaexam/junitexam/SetupExam.java[]
 ----
+
+.Assume Methods
+[cols="2, 5", options="header", width="80%"]
+|===
+|함수명 |Description
+|assumeTrue() |실제값이 true(기대값)임을 검증
+|assumeThat() |Matcher 객체로 지정한 비교 처리로 실제값을 검증
+|assumeNotNull() |실제값이 null이 아닌 것(기대값)을 검증
+|assumeNoException() |실제값이 예외가 아님(기대값)을 검증
+|===
+
+[source, java]
+----
+include::../src/test/javaexam/junitexam/AssumeExam.java[]
+----
