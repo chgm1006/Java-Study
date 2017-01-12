@@ -12,17 +12,17 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 public class StringUtilsTest {
     @Test
     public void testIsEmpty() throws Exception {
-        assertSame(StringUtils.isEmpty(null), is(true));
+        assertSame(StringUtils.isEmpty(null), true);
     }
 
     @Test
     public void testIsEmpty2() {
-        assertSame(StringUtils.isEmpty(""), is(true));
+        assertSame(StringUtils.isEmpty(""), true);
     }
 
     @Test
     public void testIsEmpty3() {
-        assertSame(StringUtils.isEmpty("test"), is(false));
+        assertSame(StringUtils.isEmpty("test"), false);
     }
 
 }

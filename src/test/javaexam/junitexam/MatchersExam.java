@@ -21,7 +21,7 @@ public class MatchersExam {
     @Test
     public void testMatchers() {
         int x = 3;
-        assertSame(x, is(3));
+        assertSame(x, 3);
 
         assumingThat(x != 0, () -> System.out.println("True"));
     }
@@ -30,10 +30,10 @@ public class MatchersExam {
     public void testNull() {
 
         String x = null;
-        assertSame(x, is(nullValue()));
+        assertSame(x, null);
 
         x = "";
-        assertSame(x, is(notNullValue()));
+        assertSame(x, "");
     }
 
     @Test
