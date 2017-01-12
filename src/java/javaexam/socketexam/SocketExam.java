@@ -11,7 +11,7 @@ public class SocketExam {
     public static void main(String[] args) throws IOException {
         try (
                 // 서버와 통신을 하기 위한 Socket
-                Socket socket = new Socket("www.google.co.kr", 80);
+                Socket socket = new Socket("localhost", 8080);
                 // 서버로 데이터를 송신하기 위한 OutputStream
                 OutputStream out = socket.getOutputStream();
                 // 서버로부터 데이터를 수신하기 위한 InputStream
