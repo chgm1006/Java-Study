@@ -1,4 +1,4 @@
-package javaexam.OptionalExam;
+package javaexam.optionalexam;
 
 import java.io.FileInputStream;
 import java.text.SimpleDateFormat;
